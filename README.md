@@ -19,12 +19,26 @@ This is a sample implementation of [https://github.com/brndnhrbrt/ln-donate-node
         <link rel="stylesheet" type="text/css" href="./donateButton.css">
     </head>
     <body>
+        
         <div class="lnd-donate-container">
             <h3>Preset amount</h3>
             <img id="lnd-donate-image" class="lndHideImage" src="http://YOUR_URL_HERE:3000/">
-            <br>
-            <button class="lnd-donate-button" onclick="lndBtnPressed()">Donate</button>
         </div>
+
+        <!-- OR -->
+
+        <div class="lnd-donate-container">
+            <h3>Custom amount</h3>
+            <img id="lnd-donate-image-custom" class="lndHideImage" src="">
+            <br>
+            <div>
+                <input id="lnd-donate-amount" class="lnd-input" type="number" name="amount" placeholder="amount">
+                <input id="lnd-donate-message" class="lnd-input" type="text" name="message" placeholder="message">
+            </div>
+            <br>
+            <button class="lnd-donate-button" onclick="lndBtnPressedCustom()">Click to Donate</button>
+        </div>
+
     </body>
 </html>
 ```
