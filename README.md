@@ -22,21 +22,25 @@ This is a sample implementation of [https://github.com/brndnhrbrt/ln-donate-node
         
         <div class="lnd-donate-container">
             <h3>Preset amount</h3>
-            <img id="lnd-donate-image" class="lndHideImage" src="http://YOUR_URL_HERE:3000/">
+            <img id="lnd-donate-image" src="http://YOUR_URL_HERE/">
+            <br>
+            <iframe src="http://YOUR_URL_HERE/ln/text" width="250" height="40" frameBorder="0">Browser not compatible.</iframe>
         </div>
 
         <!-- OR -->
-
+        
         <div class="lnd-donate-container">
             <h3>Custom amount</h3>
-            <img id="lnd-donate-image-custom" class="lndHideImage" src="">
+            <img id="lnd-donate-image-custom" class="lndHide" src="">
+            <br>
+            <iframe id="lnd-donate-iframe-custom" src="" width="250" height="40" frameBorder="0">Browser not compatible.</iframe>
             <br>
             <div>
                 <input id="lnd-donate-amount" class="lnd-input" type="number" name="amount" placeholder="amount">
                 <input id="lnd-donate-message" class="lnd-input" type="text" name="message" placeholder="message">
             </div>
             <br>
-            <button class="lnd-donate-button" onclick="lndBtnPressedCustom()">Click to Donate</button>
+            <button class="lnd-donate-button" onclick="lndBtnPressedCustom()">Donate</button>
         </div>
 
     </body>
@@ -46,3 +50,7 @@ This is a sample implementation of [https://github.com/brndnhrbrt/ln-donate-node
 ## Live Example
 
 [http://brndnhrbrt.github.io/donate.test.html](http://brndnhrbrt.github.io/donate.test.html)
+
+This example does not implement the iframe feature due to https errors
+
+
